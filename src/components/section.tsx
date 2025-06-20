@@ -7,7 +7,7 @@ type Props = {
 
 function Section({ className, children }: Props) {
     return (
-        <section className={`py-[32px] px-[24px] ${className}`}>
+        <section className={`${className}`}>
             {children}
         </section>
     )
