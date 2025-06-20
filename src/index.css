@@ -2,5 +2,26 @@
 @import "tailwindcss";
 
 @theme {
+    /* Fonts */
     --font-inter: "Inter", "sans-serif";
+
+    /* Colors */
+    --color-blue-100: #E1E7FE;
+    --color-blue-500: #345FF6;
+    --color-blue-900: #253347;
+
+    --color-grey-500: #5E6E85;
+
+}
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
 }
