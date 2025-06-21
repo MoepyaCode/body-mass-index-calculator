@@ -1,6 +1,5 @@
 import { useState } from "react";
 import ImperialInputs from "./imperial-inputs"
-// import MetricInputs from "./metric-inputs" 
 import OutputBMI from "./output"
 import RadioButton from "./radio-button"
 import MetricInputs from "./metric-inputs";
@@ -9,11 +8,9 @@ function BMIForm() {
   const [setting, setSetting] = useState<'metric' | 'imperial'>('metric');
 
   const handleFormChange = (event: React.FormEvent<HTMLFormElement>) => {
-    const target = event.target as HTMLInputElement;
-    const value = target.id;
-    if (value === 'metric' || value === 'imperial') {
-      setSetting(value);
-    }
+    const target = event.target as HTMLInputElement
+    const value = target.id as 'metric' | 'imperial'
+    setSetting(value)
   }
 
   return (
