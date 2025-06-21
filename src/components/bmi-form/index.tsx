@@ -14,7 +14,7 @@ function BMIForm() {
   }
 
   return (
-    <div className="absolute bottom-[-60%] max-w-[328px] bg-white p-6 rounded-[24px] flex flex-col gap-[24px] w-full  mx-6 shadow-[16px_32px_56px_rgba(143,174,207,0.25)]">
+    <div className="absolute bottom-[-60%] max-w-[328px] bg-white p-6 rounded-[24px] flex flex-col gap-[24px] w-full  shadow-[16px_32px_56px_rgba(143,174,207,0.25)]">
 
       <form
         onChange={handleFormChange}

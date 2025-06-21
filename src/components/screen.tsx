@@ -8,7 +8,7 @@ type Props = {
 function Screen(props: Props) {
     const { className, children } = props
     return (
-        <main className={`min-w-screen min-h-screen bg-white ${className}`}>
+        <main className={`min-w-screen min-h-screen pb-[96px] bg-white ${className}`}>
             {children}
         </main>
     )
